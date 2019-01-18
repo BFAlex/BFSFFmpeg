@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FFmpegTestVC.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self switchToTest1];
+    
     return YES;
 }
 
@@ -45,6 +48,17 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Test
+
+- (void)switchToTest1 {
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    FFmpegTestVC *testVC = [[FFmpegTestVC alloc] init];
+    self.window.rootViewController = testVC;
+    [self.window makeKeyAndVisible];
 }
 
 

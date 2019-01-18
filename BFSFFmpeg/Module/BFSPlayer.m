@@ -40,7 +40,7 @@
 
 - (void)configDefault {
     
-    NSString *curMoviePath = @"...";
+    NSString *curMoviePath = [self testVideoPath];
     self.moviePath = [curMoviePath copy];
     if (self.moviePath.length < 1) {
         return;
@@ -103,6 +103,14 @@ initError:
     int64_t targetFrame = (int64_t)((double)timeBase.den / timeBase.num * seconds);
     avformat_seek_file(_formatContext, _videoStream, 0, targetFrame, targetFrame, AVSEEK_FLAG_FRAME);
     avcodec_flush_buffers(_codecContext);
+}
+
+#pragma mark - Test
+
+- (NSString *)testVideoPath {
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"video" ofType:@"mp4"];
+    return path;
 }
 
 @end
