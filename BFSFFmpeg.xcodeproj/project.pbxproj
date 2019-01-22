@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01D691F21F7775000B0D944 /* BFSFFmpegVC0123.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D691D21F7775000B0D944 /* BFSFFmpegVC0123.m */; };
+		E01D692021F7775000B0D944 /* BFSFFmpegVC0123.xib in Resources */ = {isa = PBXBuildFile; fileRef = E01D691E21F7775000B0D944 /* BFSFFmpegVC0123.xib */; };
 		E01F4EF621BCF0040086EE8A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01F4EF521BCF0040086EE8A /* CoreMedia.framework */; };
 		E01F4EFA21BCF0270086EE8A /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01F4EF921BCF0270086EE8A /* VideoToolbox.framework */; };
 		E01F4EFC21BCF04D0086EE8A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E01F4EFB21BCF04D0086EE8A /* libz.tbd */; };
@@ -37,6 +39,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E01D691C21F7775000B0D944 /* BFSFFmpegVC0123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFSFFmpegVC0123.h; sourceTree = "<group>"; };
+		E01D691D21F7775000B0D944 /* BFSFFmpegVC0123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFSFFmpegVC0123.m; sourceTree = "<group>"; };
+		E01D691E21F7775000B0D944 /* BFSFFmpegVC0123.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFSFFmpegVC0123.xib; sourceTree = "<group>"; };
 		E01F4EF521BCF0040086EE8A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		E01F4EF721BCF00B0086EE8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E01F4EF921BCF0270086EE8A /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
@@ -101,6 +106,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E01D691B21F776CC00B0D944 /* Test190123 */ = {
+			isa = PBXGroup;
+			children = (
+				E01D691C21F7775000B0D944 /* BFSFFmpegVC0123.h */,
+				E01D691D21F7775000B0D944 /* BFSFFmpegVC0123.m */,
+				E01D691E21F7775000B0D944 /* BFSFFmpegVC0123.xib */,
+			);
+			path = Test190123;
+			sourceTree = "<group>";
+		};
 		E01F4EEF21BCEBCE0086EE8A /* ThirdFrame */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +196,7 @@
 		E0AB064A21B6D4CF00000BA7 /* BFSFFmpeg */ = {
 			isa = PBXGroup;
 			children = (
+				E01D691B21F776CC00B0D944 /* Test190123 */,
 				E063F05621F220D10001B5AD /* Test */,
 				E09ABEB221F0E60D00F3921A /* Resources */,
 				E0A9312C21BEB8F200406094 /* Module */,
@@ -270,6 +286,7 @@
 				E0AB065621B6D4CF00000BA7 /* Main.storyboard in Resources */,
 				E09ABEB421F0E62A00F3921A /* video.mp4 in Resources */,
 				E093AE6A21D121D1005A3236 /* FFmpeg-iOS in Resources */,
+				E01D692021F7775000B0D944 /* BFSFFmpegVC0123.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01D691F21F7775000B0D944 /* BFSFFmpegVC0123.m in Sources */,
 				E063F05921F221280001B5AD /* FFmpegTestVC.m in Sources */,
 				E0AB065321B6D4CF00000BA7 /* ViewController.m in Sources */,
 				E0AB065021B6D4CF00000BA7 /* AppDelegate.m in Sources */,
