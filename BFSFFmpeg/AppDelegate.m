@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "FFmpegTestVC.h"
-#import "BFSFFmpegVC0123.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +19,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 //    [self switchToTest1];
-    [self switchToTest0123];
     
     return YES;
 }
@@ -60,15 +58,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     FFmpegTestVC *testVC = [[FFmpegTestVC alloc] init];
     self.window.rootViewController = testVC;
-    [self.window makeKeyAndVisible];
-}
-
-- (void)switchToTest0123 {
-    
-    BFSFFmpegVC0123 *vc = [[BFSFFmpegVC0123 alloc] init];
-    
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
 }
 
