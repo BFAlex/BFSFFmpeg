@@ -15,6 +15,7 @@
 		C496D8192216C13B00E07048 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C496D8122216C13B00E07048 /* libswresample.a */; };
 		C496D81A2216C13B00E07048 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C496D8132216C13B00E07048 /* libswscale.a */; };
 		C496D81E2216C5F300E07048 /* SampleDemuxingCode.c in Sources */ = {isa = PBXBuildFile; fileRef = C496D81C2216C5F300E07048 /* SampleDemuxingCode.c */; };
+		C496D8212216CB8600E07048 /* BFSDemux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C496D81F2216CB8600E07048 /* BFSDemux.cpp */; };
 		E01F4EF621BCF0040086EE8A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01F4EF521BCF0040086EE8A /* CoreMedia.framework */; };
 		E01F4EFA21BCF0270086EE8A /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01F4EF921BCF0270086EE8A /* VideoToolbox.framework */; };
 		E01F4EFC21BCF04D0086EE8A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E01F4EFB21BCF04D0086EE8A /* libz.tbd */; };
@@ -158,6 +159,8 @@
 		C496D8132216C13B00E07048 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
 		C496D81C2216C5F300E07048 /* SampleDemuxingCode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SampleDemuxingCode.c; sourceTree = "<group>"; };
 		C496D81D2216C5F300E07048 /* SampleDemuxingCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleDemuxingCode.h; sourceTree = "<group>"; };
+		C496D81F2216CB8600E07048 /* BFSDemux.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BFSDemux.cpp; sourceTree = "<group>"; };
+		C496D8202216CB8600E07048 /* BFSDemux.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BFSDemux.hpp; sourceTree = "<group>"; };
 		E01F4EF521BCF0040086EE8A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		E01F4EF721BCF00B0086EE8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E01F4EF921BCF0270086EE8A /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
@@ -424,6 +427,8 @@
 			children = (
 				C496D81C2216C5F300E07048 /* SampleDemuxingCode.c */,
 				C496D81D2216C5F300E07048 /* SampleDemuxingCode.h */,
+				C496D81F2216CB8600E07048 /* BFSDemux.cpp */,
+				C496D8202216CB8600E07048 /* BFSDemux.hpp */,
 			);
 			path = BFSFFmpeg;
 			sourceTree = "<group>";
@@ -610,6 +615,7 @@
 				E063F05921F221280001B5AD /* FFmpegTestVC.m in Sources */,
 				E0AB065321B6D4CF00000BA7 /* ViewController.m in Sources */,
 				E0AB065021B6D4CF00000BA7 /* AppDelegate.m in Sources */,
+				C496D8212216CB8600E07048 /* BFSDemux.cpp in Sources */,
 				C496D81E2216C5F300E07048 /* SampleDemuxingCode.c in Sources */,
 				E0A9312F21BEB97600406094 /* BFSPlayer.m in Sources */,
 				E0AB064D21B6D4CF00000BA7 /* main.m in Sources */,

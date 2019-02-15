@@ -155,6 +155,7 @@ static int open_codec_context(int *stream_idx,
     }
     return 0;
 }
+
 static int get_format_from_sample_fmt(const char **fmt,
                                       enum AVSampleFormat sample_fmt)
 {
